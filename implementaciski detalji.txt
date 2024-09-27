@@ -1,0 +1,22 @@
+URL aplikacije: https://web2-lab6-web-service.onrender.com
+Aplikacija treba imati:
+
+    interpolation/one-way binding - implementirano primjer {{ gameStatus }} u TicTacToeBoard.vue. linije :3 i :45
+    two-way binding - implementirano u TicTacToeBoard.vue korisnik moze mjenjati boju pozadine ovisno o boardColor inputu linije :2 i :20
+    methods - implentirano u TicTacToeBoard.vue za (handleClick) i za (resetGame). linija :63
+    computed properties - implementirano gameStatus u TicTacToeBoard.vue linija :44
+    barem jedan scoped style - implementirano koristi se skoro u svim .vue
+    koristiti barem jedan lifecycle hook - implementirano koristim onMounted u TicTacToeBoard.vue za log kada se mounta komponenta linija :100
+    routing (više stranica) - implementirano imam vise stranica: Home.vue, History.vue i NotFound.vue
+        aplikacija mora biti bookmarkable, tako da rade linkovi - implementirano, ali ne radi na deployu, probaj lokalno sa http://localhost:5173/history
+        dinamičko usmjeravanje s 404 stranicom ("catch all") - implementirano, ali ne radi na deployu, probaj lokalno sa http://localhost:5173/abc
+    (barem) dvije komponente imam komponente Header.vue, ResetButton.vue, Square.vue i TicTacToeBoard.vue
+        komponenta bez stanja, koristiti properties - implementirano komponenta Square.vue linija :9
+        komponenta sa stanjem - implementirano komponenta TicTacToeBoard.vue linija :37 do :43
+    barem jedna komponenta mora emitirati barem jedan event - implementirano komponenta Square.vue emitira click event linija :14
+    store (Pinia) - implmentirano korisit se za dohvat i modifikaciju varijabli playerX i playerY. sam kod za store se nalazi u src/store/index.js i imaplementacija u TicTacToeBoard.vue linije :14, :15, :16, :47, :50, :52
+    asinkroni dohvat podataka s backenda, možete:
+        koristiti Firebase ili Back4App, Mocky, itd.
+        vlastiti storage, ili
+        možete mock napraviti, držati podatke u memoriji, ali mora biti asinkroni poziv/upis - nije implementirano
+        ostvariti asinkrono (lazy, po potrebi) učitavanje nekog dijela aplikacije (stranice ili komponente) - nije implementirano
